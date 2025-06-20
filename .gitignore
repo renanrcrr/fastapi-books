@@ -1,0 +1,40 @@
+# Exclude virtual environment directory
+fastapienv/
+
+# Exclude Python cache files
+__pycache__/
+*.pyc
+
+# Exclude environment files
+.env
+*.env
+
+# Exclude IDE-specific files
+.vscode/
+.idea/
+
+# Exclude logs
+*.log
+
+# Exclude temporary files
+*.tmp
+*.swp
+
+# Exclude compiled files
+*.pyo
+*.so
+*.dll
+
+# Exclude coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Exclude test artifacts
+*.test
+*.spec
+
+# Exclude build artifacts
+build/
+dist/
+*.egg-info/
