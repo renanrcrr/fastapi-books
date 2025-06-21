@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 
 app = FastAPI()
 
@@ -25,6 +25,10 @@ BOOKS = [
     Book(6, "The Handmaid's Tale", "Margaret Atwood", "Novel about a totalitarian society", 3)
 ]
 
-@app.get("/books2")
+@app.get("/real-books")
 async def read_all_books():
     return BOOKS
+
+@app.post("/create-book")
+async def create_book(book_request=Body()):
+    BOOKS.append(book_request)
